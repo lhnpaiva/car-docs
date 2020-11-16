@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    tools:context=".presentation.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/header_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/google_sans_bold"
+        android:text="CADASTRO"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_layout">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/google_sans_bold"
+        android:text="NOME COMPLETO"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFullName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegister">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:elevation="4dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/textViewFullName">
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewCellphoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/google_sans_bold"
+        android:text="CELULAR"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFullName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFullName">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextCellphoneNumber"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="4dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/textViewCellphoneNumber">
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/google_sans_bold"
+        android:text="E-MAIL"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextFullName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCellphoneNumber">
+    </TextView>
+
+    <EditText
+        android:id="@+id/EditTextViewEmail"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:elevation="4dp"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail">
+    </EditText>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
