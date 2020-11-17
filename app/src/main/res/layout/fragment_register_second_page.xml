@@ -7,38 +7,16 @@
     android:background="@color/lightGray"
     tools:context=".presentation.LoginActivity">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/header_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/background_top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </androidx.appcompat.widget.AppCompatImageView>
-
-    <TextView
-        android:id="@+id/textViewRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/google_sans_bold"
-        android:text="CADASTRO"
-        android:textColor="@android:color/black"
-        android:textSize="24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_layout">
-    </TextView>
-
     <TextView
         android:id="@+id/textViewFullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/google_sans_bold"
-        android:text="NOME COMPLETO"
+        android:text="ESTADO"
         android:textColor="@color/gray"
         android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="@+id/editTextFullName"
         app:layout_constraintTop_toBottomOf="@+id/textViewRegister">
     </TextView>
@@ -63,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/google_sans_bold"
-        android:text="CELULAR"
+        android:text="CIDADE"
         android:textColor="@color/gray"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/editTextFullName"
@@ -73,7 +51,7 @@
     <EditText
         android:id="@+id/editTextCellphoneNumber"
         android:layout_width="315dp"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/rounded_edittext"
         android:elevation="4dp"
@@ -90,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/google_sans_bold"
-        android:text="E-MAIL"
+        android:text="DATA DE NASCIMENTO"
         android:textColor="@color/gray"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/editTextFullName"
@@ -100,7 +78,7 @@
     <EditText
         android:id="@+id/EditTextViewEmail"
         android:layout_width="315dp"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:layout_marginTop="4dp"
         android:paddingRight="5dp"
         android:paddingLeft="5dp"
