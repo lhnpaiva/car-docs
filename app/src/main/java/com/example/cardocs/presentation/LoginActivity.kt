@@ -2,6 +2,7 @@ package com.example.cardocs.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.cardocs.R
 import com.google.android.material.tabs.TabLayout
@@ -16,7 +17,9 @@ class LoginActivity : AppCompatActivity() {
         val viewPager2 = findViewById<ViewPager2>(R.id.registerViewPager)
         val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
 
-        viewPager2.adapter = ViewPagerAdapter(this@LoginActivity)
+        val fragmentList = arrayListOf(RegisterFirstPageFragment.newInstance(), RegisterSecondPageFragment.newInstance(), RegisterThirdPageFragment.newInstance())
+
+        viewPager2.adapter = ViewPagerAdapter(this@LoginActivity, fragmentList)
 
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
             //Some implementation

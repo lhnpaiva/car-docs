@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.cardocs.R
 
-class RegisterFirstPageFragment : Fragment() {
+class RegisterThirdPageFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_register_first_page, container, false)
+        return inflater.inflate(R.layout.fragment_register_third_page, container, false)
     }
 
     companion object{
-        fun newInstance() = RegisterFirstPageFragment()
+        fun newInstance() = RegisterThirdPageFragment()
     }
 }
