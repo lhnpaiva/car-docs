@@ -17,12 +17,12 @@
         android:textColor="@color/gray"
         android:textSize="12sp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextFullName"
+        app:layout_constraintStart_toStartOf="@+id/editTextCPF"
         app:layout_constraintTop_toBottomOf="@+id/textViewRegister">
     </TextView>
 
     <EditText
-        android:id="@+id/editTextFullName"
+        android:id="@+id/editTextCPF"
         android:layout_width="315dp"
         android:layout_height="50dp"
         android:layout_marginTop="4dp"
@@ -34,6 +34,79 @@
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/textViewFullName">
     </EditText>
+
+
+    <TextView
+        android:id="@+id/textViewMasculino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextCPF"
+        app:layout_constraintLeft_toLeftOf="@id/editTextCPF"
+        android:fontFamily="@font/google_sans_bold"
+        android:text="MASCULINO"
+        android:textColor="@color/gray"
+        android:textSize="12sp"/>
+
+    <CheckBox
+        android:id="@+id/cbMasculino"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:paddingRight="4dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewMasculino"
+        app:layout_constraintLeft_toLeftOf="@id/textViewMasculino"
+        app:layout_constraintRight_toRightOf="@id/textViewMasculino"
+        android:button="@drawable/check_box_register"/>
+
+    <TextView
+        android:id="@+id/textViewFeminino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/google_sans_bold"
+        android:text="FEMININO"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/textViewMasculino"
+        app:layout_constraintRight_toLeftOf="@id/textViewOther"
+        app:layout_constraintTop_toBottomOf="@id/editTextCPF" />
+
+    <CheckBox
+        android:id="@+id/cdFeminino"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:paddingRight="4dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewFeminino"
+        app:layout_constraintLeft_toLeftOf="@id/textViewFeminino"
+        app:layout_constraintRight_toRightOf="@id/textViewFeminino"
+        android:button="@drawable/check_box_register"/>
+
+    <TextView
+        android:id="@+id/textViewOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextCPF"
+        app:layout_constraintRight_toRightOf="@id/editTextCPF"
+        android:fontFamily="@font/google_sans_bold"
+        android:text="OUTRO"
+        android:textColor="@color/gray"
+        android:textSize="12sp"/>
+
+    <CheckBox
+        android:id="@+id/cdOther"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:paddingRight="4dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewOther"
+        app:layout_constraintLeft_toLeftOf="@id/textViewOther"
+        app:layout_constraintRight_toRightOf="@id/textViewOther"
+        android:button="@drawable/check_box_register"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -48,13 +121,5 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="24dp" />
-
-    <RadioGroup
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextFullName"
-        app:layout_constraintStart_toStartOf="@+id/editTextFullName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFullName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
