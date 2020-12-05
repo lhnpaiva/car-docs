@@ -26,6 +26,21 @@
         app:layout_constraintTop_toBottomOf="@id/tabLayout"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/registerViewPager"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/background_button"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/google_sans_bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="Próximo" />
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="0dp"

@@ -16,7 +16,11 @@ class RegisterSecondPageFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_register_second_page, container, false)
     }
 
-    companion object{
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+    }
+
+    companion object {
         fun newInstance() = RegisterSecondPageFragment()
     }
 }
